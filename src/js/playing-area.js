@@ -1,5 +1,10 @@
 export default class PlayingArea {
 
+    constructor() {
+      this.score = 0;
+      this.missings = 0;
+    }
+
     randomMovingGoblin() {
       const goblinImg = document.createElement('img');
       goblinImg.classList.add('playing-area__img');
@@ -16,6 +21,25 @@ export default class PlayingArea {
       const randomPlayingItem = Math.floor(Math.random() * playingItemsCollection.length);
   
       playingItemsCollection[randomPlayingItem].append(goblinImg);
+
+      goblinImg.addEventListener()
+    }
+
+    clickGoblin(status) {
+      this.randomMovingGoblin()
+
+      if (status) this.score++;
+      else {
+        this.missings++
+        this.checkMissings(this.missings)
+      } 
+
+    }
+
+    checkMissings(numberOfMissings) {
+      if (numberOfMissings == 5) {
+        alert('Game over');
+      }
     }
     
   }
