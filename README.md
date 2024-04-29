@@ -1,5 +1,5 @@
 # Webpack5
-![CI](https://github.com/T236522vfbfb/EVETs/actions/workflows/web.yml/badge.svg)
+![CI](https://github.com/T236522vfbfb/EVENTs/actions/workflows/web.yml/badge.svg)
 
 [Руководство по настройке Webpack](https://webpack.js.org/guides/)
 [Руководство по настройке GitHub Actions](https://docs.github.com/en/actions/quickstart)
